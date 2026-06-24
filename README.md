@@ -2,8 +2,6 @@
 
 Reinforcement learning system that learns a **turn-level dialogue policy** from 1,500 unlabeled real-estate voicebot call transcripts.
 
-See [plan.md](plan.md) for the full design plan, implementation architecture, and runbook.
-
 ## Pipeline workflow
 
 End-to-end flow from raw call logs to a deployable policy with human oversight:

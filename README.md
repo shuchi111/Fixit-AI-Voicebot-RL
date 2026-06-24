@@ -1,4 +1,4 @@
-# Fixit AI — Voicebot RL
+#  Voicebot RL
 
 Reinforcement learning system that learns a **turn-level dialogue policy** from 1,500 unlabeled real-estate voicebot call transcripts.
 
@@ -146,35 +146,35 @@ uv run pytest -q
 After `--parse-only`, results are written to `outputs/parse_report.json`.
 
 After `--extract-features`:
-- `outputs/bot_states.parquet` — one row per bot turn (~10k+ states)
-- `outputs/feature_report.json` — feature means and non-zero rates
-- `outputs/feature_names.json` — ordered feature name list
+- `outputs/bot_states.parquet`: one row per bot turn (~10k+ states)
+- `outputs/feature_report.json`: feature means and non-zero rates
+- `outputs/feature_names.json`: ordered feature name list
 
 After `--infer-actions`:
-- `outputs/mdp_rows.parquet` — state features + inferred action per bot turn
-- `outputs/action_report.json` — action distribution and context mismatch rate
+- `outputs/mdp_rows.parquet`: state features + inferred action per bot turn
+- `outputs/action_report.json`: action distribution and context mismatch rate
 
 After `--build-trajectories`:
-- `outputs/trajectories.parquet` — full (s, a, r) transitions with reward breakdown
-- `outputs/reward_report.json` — baseline mean return and reward component counts
+- `outputs/trajectories.parquet`: full (s, a, r) transitions with reward breakdown
+- `outputs/reward_report.json`: baseline mean return and reward component counts
 
 After `--train`:
-- `policies/policy_learned_v1.json` — tabular Q-policy with behaviour constraints
-- `outputs/learning_curve.png` — validation return per epoch
-- `outputs/train_report.json` — baseline vs learned val return
+- `policies/policy_learned_v1.json`: tabular Q-policy with behaviour constraints
+- `outputs/learning_curve.png`: validation return per epoch
+- `outputs/train_report.json`: baseline vs learned val return
 
 After `--eval`:
-- `outputs/eval_report.json` — IPS + DR estimates, 95% bootstrap CIs, assumptions
+- `outputs/eval_report.json`: IPS + DR estimates, 95% bootstrap CIs, assumptions
 
 After `--train --eval --report`:
-- `outputs/final_report.json` — final baseline vs learned comparison
-- `policies/registry.json` — active policy version and rollback records
+- `outputs/final_report.json`: final baseline vs learned comparison
+- `policies/registry.json`: active policy version and rollback records
 
 Human-control files:
-- `configs/freeze_rules.yaml` — hard rules that force safe actions for risky states
-- `policies/policy_baseline_v0.json` — behavior-policy fallback
-- `policies/policy_learned_v1.json` — versioned learned policy
-- `policies/policy_active.json` — active deploy policy used by default evaluation
+- `configs/freeze_rules.yaml`: hard rules that force safe actions for risky states
+- `policies/policy_baseline_v0.json`: behavior-policy fallback
+- `policies/policy_learned_v1.json`: versioned learned policy
+- `policies/policy_active.json`: active deploy policy used by default evaluation
 
 ## System capabilities
 

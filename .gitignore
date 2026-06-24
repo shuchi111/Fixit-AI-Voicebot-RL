@@ -1,0 +1,27 @@
+# uv / Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime outputs (keep directory via .gitkeep)
+
+!outputs/.gitkeep
+gitkeep
+/plan.md
+/data 

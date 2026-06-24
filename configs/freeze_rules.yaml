@@ -1,0 +1,12 @@
+# Human-defined guardrails applied at policy inference time.
+
+force_action_rules:
+  - when_state_contains: "|h1|"
+    action: GRACEFUL_EXIT
+    reason: "Hostile customer — always exit gracefully"
+  - when_state_contains: "|b1|"
+    action: ACK_BUSY_DEFER
+    reason: "Customer busy — defer instead of pitching"
+
+never_override_actions:
+  - GRACEFUL_EXIT

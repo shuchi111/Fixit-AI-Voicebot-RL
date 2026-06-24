@@ -1,0 +1,83 @@
+# Default configuration — all tunable hyperparameters live here.
+
+seed: 42
+
+data:
+  transcripts_dir: data/transcripts
+
+parser:
+  timestamp_format: "%Y-%m-%d %H:%M:%S UTC"
+  validate_message_count: true
+
+outputs:
+  dir: outputs
+  trajectories_file: trajectories.parquet
+  learning_curve_file: learning_curve.png
+  eval_report_file: eval_report.json
+
+split:
+  train_ratio: 0.70
+  val_ratio: 0.10
+  test_ratio: 0.20
+
+features:
+  names_file: feature_names.json
+  report_file: feature_report.json
+  states_file: bot_states.parquet
+
+actions:
+  report_file: action_report.json
+  labels_file: bot_actions.parquet
+  mdp_rows_file: mdp_rows.parquet
+
+reward:
+  turn:
+    collision: -0.30
+    repeat_question: -0.25
+    objection_ignored: -0.50
+    busy_ignored: -0.40
+    customer_substance: 0.25
+    handle_objection: 0.20
+    handle_busy: 0.30
+    customer_engagement: 0.10
+    hostility_increase: -0.35
+  terminal:
+    success: 1.00
+    good_deferral: 0.40
+    premature_exit: -0.80
+    hostile_end: -0.60
+    wasted_engaged: -0.50
+  thresholds:
+    min_success_turns: 8
+    min_success_slots: 3
+    min_engagement_signals: 3
+
+learning:
+  alpha: 0.12
+  gamma: 0.95
+  epochs: 50
+
+discretizer:
+  turn_bins: 6
+
+constraints:
+  max_kl_divergence: 0.8
+  blend_alpha: 0.5
+  min_q_improvement: 0.12
+
+policy:
+  baseline_file: policy_baseline_v0.json
+  learned_file: policy_learned_v1.json
+
+control:
+  freeze_rules_file: configs/freeze_rules.yaml
+  deploy_file: policy_active.json
+  registry_file: registry.json
+
+ope:
+  min_propensity: 0.01
+  rho_max: 10.0
+  fqe_gamma: 0.95
+  fqe_alpha: 0.1
+  fqe_epochs: 30
+  bootstrap_samples: 1000

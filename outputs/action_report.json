@@ -1,0 +1,30 @@
+{
+  "total_calls": 1500,
+  "total_bot_actions": 11402,
+  "action_distribution": {
+    "GREET": 1899,
+    "ASK_PROPERTY_TYPE": 1509,
+    "ASK_BUDGET": 1543,
+    "ASK_LOCATION": 805,
+    "ASK_TIMELINE": 666,
+    "HANDLE_OBJECTION": 1434,
+    "PROVIDE_INFO": 367,
+    "CLARIFY_REPEAT": 1334,
+    "ACK_BUSY_DEFER": 144,
+    "GRACEFUL_EXIT": 1701
+  },
+  "context_mismatch_count": 310,
+  "context_mismatch_rate": 0.027188212594281704,
+  "top_rules": {
+    "greeting_or_opener": 1899,
+    "graceful_exit_phrase": 1701,
+    "ask_budget": 1543,
+    "ask_property_type": 1509,
+    "objection_response": 1434,
+    "fallback_unmatched": 1012,
+    "ask_location": 805,
+    "ask_timeline": 666,
+    "payment_or_plan_info": 367,
+    "clarify_repeat": 322
+  }
+}

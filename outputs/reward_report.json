@@ -1,0 +1,23 @@
+{
+  "baseline_summary": {
+    "total_calls": 1500,
+    "total_transitions": 11402,
+    "mean_return": -0.6557,
+    "min_return": -3.6,
+    "max_return": 0.8
+  },
+  "reward_component_counts": {
+    "busy_ignored": 310,
+    "objection_ignored": 277,
+    "customer_engagement": 4626,
+    "repeat_question": 928,
+    "premature_exit": 887,
+    "handle_objection": 352,
+    "collision": 706,
+    "hostility_increase": 141,
+    "hostile_end": 128,
+    "handle_busy": 33,
+    "good_deferral": 39
+  },
+  "mean_reward_per_transition": -0.0862611822487283
+}

@@ -1,0 +1,59 @@
+{
+  "primary_estimator": "DoublyRobust",
+  "baseline_test_return": -0.6216666666666667,
+  "ips": {
+    "estimator": "IPS",
+    "point_estimate": -0.07907167378284227,
+    "ci_95": [
+      -0.4620092532724059,
+      0.36500397657925276
+    ],
+    "baseline_behavior_return": -0.6216666666666667,
+    "n_episodes": 300,
+    "assumptions": [
+      "Positivity: pi_b(a|s) > 0 whenever pi_e(a|s) > 0",
+      "Sequential exchangeability: no unmeasured confounders in logged data",
+      "Stationary logging policy: behaviour policy stable across the dataset",
+      "Accurate Q_hat: FQE converged on training trajectories"
+    ],
+    "failure_cases": [
+      "Evaluation policy takes actions rarely seen in pi_b support; importance weights clip at rho_max and DR extrapolates optimistically.",
+      "State discretisation merges distinct contexts; Q_hat is biased within clusters.",
+      "Reward is a constructed proxy; OPE optimises proxy not true call quality."
+    ],
+    "diagnostics": {
+      "low_propensity_fraction": 0.03288031565103025,
+      "matched_action_rate": 0.4344585708022797,
+      "ips_nonzero_weight_episodes": 15
+    }
+  },
+  "dr": {
+    "estimator": "DoublyRobust",
+    "point_estimate": -0.007722514828964879,
+    "ci_95": [
+      -0.5975945082734246,
+      0.6112780775599689
+    ],
+    "baseline_behavior_return": -0.6216666666666667,
+    "n_episodes": 300,
+    "assumptions": [
+      "Positivity: pi_b(a|s) > 0 whenever pi_e(a|s) > 0",
+      "Sequential exchangeability: no unmeasured confounders in logged data",
+      "Stationary logging policy: behaviour policy stable across the dataset",
+      "Accurate Q_hat: FQE converged on training trajectories"
+    ],
+    "failure_cases": [
+      "Evaluation policy takes actions rarely seen in pi_b support; importance weights clip at rho_max and DR extrapolates optimistically.",
+      "State discretisation merges distinct contexts; Q_hat is biased within clusters.",
+      "Reward is a constructed proxy; OPE optimises proxy not true call quality."
+    ],
+    "diagnostics": {
+      "low_propensity_fraction": 0.03288031565103025,
+      "matched_action_rate": 0.4344585708022797,
+      "ips_nonzero_weight_episodes": 15
+    }
+  },
+  "improvement_vs_baseline": 0.6139441518377018,
+  "significant_improvement": true,
+  "n_test_episodes": 300
+}

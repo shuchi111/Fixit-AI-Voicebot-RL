@@ -1,0 +1,9 @@
+{
+  "total_files": 1500,
+  "parsed_calls": 1500,
+  "failed_files": [],
+  "mismatch_count": 0,
+  "message_count_min": 5,
+  "message_count_max": 31,
+  "message_count_mean": 14.284666666666666
+}

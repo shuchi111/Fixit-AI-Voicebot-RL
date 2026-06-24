@@ -1,0 +1,1426 @@
+{
+  "version": "baseline_v0",
+  "q_values": {},
+  "discretizer": {
+    "turn_bins": 6
+  },
+  "constraints": {
+    "max_kl_divergence": 0.5,
+    "blend_alpha": 0.5,
+    "min_q_improvement": 0.15
+  },
+  "behavior_policy": {
+    "smoothing": 0.1,
+    "action_counts": {
+      "s0|o0|b0|e0|h0|c0|r0|t0": {
+        "GREET": 1122,
+        "CLARIFY_REPEAT": 67,
+        "HANDLE_OBJECTION": 3,
+        "ASK_PROPERTY_TYPE": 52,
+        "ASK_TIMELINE": 8,
+        "ASK_BUDGET": 14,
+        "PROVIDE_INFO": 1,
+        "ASK_LOCATION": 2
+      },
+      "s0|o0|b1|e0|h0|c0|r0|t1": {
+        "ASK_LOCATION": 2,
+        "GREET": 9,
+        "ASK_BUDGET": 19,
+        "CLARIFY_REPEAT": 25,
+        "ASK_PROPERTY_TYPE": 16
+      },
+      "s2|o0|b0|e0|h0|c0|r0|t3": {
+        "CLARIFY_REPEAT": 15,
+        "ASK_BUDGET": 21,
+        "ASK_LOCATION": 21,
+        "HANDLE_OBJECTION": 34,
+        "PROVIDE_INFO": 12,
+        "ASK_TIMELINE": 8,
+        "ASK_PROPERTY_TYPE": 15,
+        "GREET": 2
+      },
+      "s2|o1|b0|e0|h0|c0|r0|t4": {
+        "ASK_PROPERTY_TYPE": 6,
+        "GRACEFUL_EXIT": 17,
+        "ASK_TIMELINE": 1,
+        "HANDLE_OBJECTION": 16,
+        "ASK_BUDGET": 5,
+        "CLARIFY_REPEAT": 8,
+        "ASK_LOCATION": 2,
+        "PROVIDE_INFO": 2
+      },
+      "s3|o0|b1|e0|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 13,
+        "ASK_BUDGET": 1,
+        "ACK_BUSY_DEFER": 1
+      },
+      "s1|o0|b0|e1|h0|c0|r0|t1": {
+        "HANDLE_OBJECTION": 48,
+        "ASK_BUDGET": 35,
+        "ASK_LOCATION": 16,
+        "ASK_TIMELINE": 16,
+        "PROVIDE_INFO": 7,
+        "ASK_PROPERTY_TYPE": 43,
+        "CLARIFY_REPEAT": 17,
+        "GREET": 2
+      },
+      "s2|o0|b0|e0|h0|c0|r0|t1": {
+        "ASK_PROPERTY_TYPE": 3,
+        "ASK_LOCATION": 6,
+        "ASK_BUDGET": 8,
+        "ASK_TIMELINE": 2,
+        "GREET": 1,
+        "HANDLE_OBJECTION": 16,
+        "PROVIDE_INFO": 6,
+        "CLARIFY_REPEAT": 3
+      },
+      "s2|o0|b0|e1|h0|c0|r0|t2": {
+        "HANDLE_OBJECTION": 29,
+        "ASK_PROPERTY_TYPE": 25,
+        "ASK_TIMELINE": 27,
+        "ASK_LOCATION": 24,
+        "ASK_BUDGET": 44,
+        "CLARIFY_REPEAT": 9,
+        "PROVIDE_INFO": 2
+      },
+      "s2|o1|b0|e0|h0|c0|r0|t3": {
+        "HANDLE_OBJECTION": 27,
+        "CLARIFY_REPEAT": 11,
+        "ASK_PROPERTY_TYPE": 13,
+        "ASK_BUDGET": 11,
+        "ASK_LOCATION": 2,
+        "PROVIDE_INFO": 7,
+        "GREET": 5,
+        "ASK_TIMELINE": 1
+      },
+      "s2|o0|b0|e1|h0|c0|r0|t3": {
+        "ASK_LOCATION": 56,
+        "ASK_BUDGET": 49,
+        "HANDLE_OBJECTION": 23,
+        "CLARIFY_REPEAT": 33,
+        "ASK_PROPERTY_TYPE": 35,
+        "ASK_TIMELINE": 20,
+        "PROVIDE_INFO": 6,
+        "GREET": 2
+      },
+      "s3|o0|b0|e1|h0|c0|r0|t4": {
+        "HANDLE_OBJECTION": 32,
+        "CLARIFY_REPEAT": 56,
+        "ASK_TIMELINE": 21,
+        "ASK_BUDGET": 29,
+        "ASK_LOCATION": 39,
+        "ASK_PROPERTY_TYPE": 12,
+        "GRACEFUL_EXIT": 3,
+        "PROVIDE_INFO": 7,
+        "GREET": 2
+      },
+      "s3|o0|b0|e1|h0|c1|r0|t4": {
+        "ASK_PROPERTY_TYPE": 1,
+        "ASK_BUDGET": 4,
+        "PROVIDE_INFO": 1,
+        "HANDLE_OBJECTION": 1,
+        "CLARIFY_REPEAT": 5,
+        "ASK_TIMELINE": 3,
+        "ASK_LOCATION": 1,
+        "GRACEFUL_EXIT": 1
+      },
+      "s3|o1|b0|e0|h0|c0|r0|t5": {
+        "HANDLE_OBJECTION": 15,
+        "GRACEFUL_EXIT": 31,
+        "PROVIDE_INFO": 2,
+        "CLARIFY_REPEAT": 4,
+        "ACK_BUSY_DEFER": 1,
+        "ASK_BUDGET": 1,
+        "GREET": 1,
+        "ASK_TIMELINE": 1
+      },
+      "s3|o0|b0|e0|h0|c0|r0|t5": {
+        "ASK_LOCATION": 9,
+        "GRACEFUL_EXIT": 85,
+        "HANDLE_OBJECTION": 9,
+        "CLARIFY_REPEAT": 22,
+        "ASK_TIMELINE": 10,
+        "ACK_BUSY_DEFER": 4,
+        "ASK_BUDGET": 8,
+        "GREET": 2,
+        "PROVIDE_INFO": 5,
+        "ASK_PROPERTY_TYPE": 4
+      },
+      "s3|o0|b0|e1|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 178,
+        "CLARIFY_REPEAT": 78,
+        "ASK_LOCATION": 22,
+        "ASK_PROPERTY_TYPE": 8,
+        "ASK_BUDGET": 14,
+        "ASK_TIMELINE": 20,
+        "PROVIDE_INFO": 8,
+        "ACK_BUSY_DEFER": 3,
+        "HANDLE_OBJECTION": 4
+      },
+      "s0|o0|b0|e0|h0|c0|r0|t2": {
+        "CLARIFY_REPEAT": 30,
+        "PROVIDE_INFO": 2,
+        "ASK_PROPERTY_TYPE": 26,
+        "GREET": 21,
+        "ASK_BUDGET": 13,
+        "HANDLE_OBJECTION": 5,
+        "ASK_TIMELINE": 3,
+        "ASK_LOCATION": 3
+      },
+      "s0|o0|b0|e0|h0|c0|r0|t4": {
+        "ASK_TIMELINE": 9,
+        "ASK_PROPERTY_TYPE": 1,
+        "ASK_BUDGET": 3,
+        "ACK_BUSY_DEFER": 1,
+        "ASK_LOCATION": 3,
+        "HANDLE_OBJECTION": 8,
+        "CLARIFY_REPEAT": 2
+      },
+      "s0|o0|b0|e1|h0|c0|r0|t1": {
+        "ASK_BUDGET": 71,
+        "ASK_PROPERTY_TYPE": 52,
+        "ASK_TIMELINE": 16,
+        "CLARIFY_REPEAT": 23,
+        "ASK_LOCATION": 12,
+        "HANDLE_OBJECTION": 27,
+        "GREET": 5,
+        "PROVIDE_INFO": 2
+      },
+      "s1|o0|b0|e1|h0|c0|r1|t2": {
+        "ASK_LOCATION": 3,
+        "ASK_PROPERTY_TYPE": 16,
+        "ASK_BUDGET": 10,
+        "HANDLE_OBJECTION": 6,
+        "ASK_TIMELINE": 4,
+        "CLARIFY_REPEAT": 4
+      },
+      "s2|o0|b0|e1|h0|c0|r1|t3": {
+        "ASK_BUDGET": 7,
+        "ASK_TIMELINE": 5,
+        "HANDLE_OBJECTION": 8,
+        "ASK_LOCATION": 9,
+        "GREET": 2,
+        "ASK_PROPERTY_TYPE": 6
+      },
+      "s2|o0|b0|e1|h0|c0|r0|t4": {
+        "ASK_BUDGET": 26,
+        "ASK_LOCATION": 20,
+        "PROVIDE_INFO": 2,
+        "GRACEFUL_EXIT": 23,
+        "CLARIFY_REPEAT": 44,
+        "ASK_PROPERTY_TYPE": 27,
+        "HANDLE_OBJECTION": 20,
+        "ACK_BUSY_DEFER": 4,
+        "ASK_TIMELINE": 18,
+        "GREET": 1
+      },
+      "s2|o0|b0|e1|h0|c0|r1|t4": {
+        "ASK_TIMELINE": 3,
+        "ASK_LOCATION": 10,
+        "HANDLE_OBJECTION": 3,
+        "CLARIFY_REPEAT": 4,
+        "GRACEFUL_EXIT": 7,
+        "ASK_BUDGET": 12,
+        "ASK_PROPERTY_TYPE": 2,
+        "PROVIDE_INFO": 1,
+        "GREET": 1
+      },
+      "s1|o0|b0|e0|h0|c1|r0|t1": {
+        "HANDLE_OBJECTION": 2,
+        "ASK_LOCATION": 1,
+        "ASK_BUDGET": 3,
+        "ASK_PROPERTY_TYPE": 1,
+        "CLARIFY_REPEAT": 1,
+        "PROVIDE_INFO": 1
+      },
+      "s3|o1|b0|e0|h0|c0|r0|t2": {
+        "HANDLE_OBJECTION": 13,
+        "CLARIFY_REPEAT": 4,
+        "PROVIDE_INFO": 2
+      },
+      "s3|o0|b0|e1|h0|c0|r0|t3": {
+        "ASK_LOCATION": 25,
+        "ASK_PROPERTY_TYPE": 14,
+        "HANDLE_OBJECTION": 16,
+        "ASK_TIMELINE": 17,
+        "PROVIDE_INFO": 6,
+        "ASK_BUDGET": 15,
+        "CLARIFY_REPEAT": 15,
+        "GREET": 1
+      },
+      "s4|o1|b0|e0|h0|c0|r0|t4": {
+        "HANDLE_OBJECTION": 8,
+        "ASK_TIMELINE": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s4|o0|b0|e1|h0|c0|r0|t4": {
+        "CLARIFY_REPEAT": 7,
+        "PROVIDE_INFO": 1,
+        "ASK_TIMELINE": 5,
+        "ASK_LOCATION": 6,
+        "HANDLE_OBJECTION": 5,
+        "ASK_BUDGET": 3,
+        "ASK_PROPERTY_TYPE": 2
+      },
+      "s4|o0|b0|e1|h0|c0|r0|t5": {
+        "HANDLE_OBJECTION": 9,
+        "GRACEFUL_EXIT": 50,
+        "CLARIFY_REPEAT": 31,
+        "ASK_BUDGET": 5,
+        "ACK_BUSY_DEFER": 2,
+        "ASK_LOCATION": 3,
+        "PROVIDE_INFO": 2,
+        "ASK_PROPERTY_TYPE": 4,
+        "ASK_TIMELINE": 3,
+        "GREET": 1
+      },
+      "s0|o0|b1|e0|h0|c0|r0|t3": {
+        "ACK_BUSY_DEFER": 14
+      },
+      "s0|o0|b0|e1|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 20
+      },
+      "s0|o0|b0|e1|h0|c0|r0|t0": {
+        "ASK_BUDGET": 9,
+        "GREET": 84,
+        "CLARIFY_REPEAT": 62,
+        "ASK_PROPERTY_TYPE": 57,
+        "ASK_LOCATION": 2,
+        "ASK_TIMELINE": 3,
+        "HANDLE_OBJECTION": 9,
+        "PROVIDE_INFO": 2
+      },
+      "s3|o0|b0|e1|h0|c0|r0|t2": {
+        "ASK_LOCATION": 12,
+        "CLARIFY_REPEAT": 5,
+        "ASK_BUDGET": 18,
+        "HANDLE_OBJECTION": 8,
+        "ASK_PROPERTY_TYPE": 5,
+        "ASK_TIMELINE": 7,
+        "PROVIDE_INFO": 2
+      },
+      "s1|o0|b0|e1|h0|c0|r0|t2": {
+        "ASK_BUDGET": 51,
+        "ASK_PROPERTY_TYPE": 67,
+        "ASK_LOCATION": 22,
+        "HANDLE_OBJECTION": 25,
+        "ASK_TIMELINE": 21,
+        "CLARIFY_REPEAT": 6,
+        "PROVIDE_INFO": 4
+      },
+      "s2|o0|b0|e1|h0|c0|r0|t1": {
+        "ASK_BUDGET": 20,
+        "ASK_LOCATION": 17,
+        "ASK_TIMELINE": 10,
+        "PROVIDE_INFO": 3,
+        "HANDLE_OBJECTION": 20,
+        "ASK_PROPERTY_TYPE": 6,
+        "CLARIFY_REPEAT": 5,
+        "GREET": 2
+      },
+      "s4|o0|b0|e1|h0|c0|r0|t3": {
+        "ASK_PROPERTY_TYPE": 3,
+        "ASK_BUDGET": 2,
+        "ASK_LOCATION": 2,
+        "HANDLE_OBJECTION": 1
+      },
+      "s4|o0|b0|e1|h0|c0|r1|t4": {
+        "ASK_PROPERTY_TYPE": 1,
+        "ASK_TIMELINE": 1,
+        "ASK_LOCATION": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s4|o0|b0|e1|h0|c1|r0|t4": {
+        "CLARIFY_REPEAT": 3,
+        "HANDLE_OBJECTION": 1,
+        "ASK_LOCATION": 1
+      },
+      "s1|o0|b0|e0|h0|c0|r0|t1": {
+        "PROVIDE_INFO": 6,
+        "ASK_PROPERTY_TYPE": 19,
+        "CLARIFY_REPEAT": 21,
+        "ASK_BUDGET": 31,
+        "HANDLE_OBJECTION": 35,
+        "ASK_TIMELINE": 10,
+        "ASK_LOCATION": 9,
+        "GREET": 5
+      },
+      "s2|o0|b0|e0|h0|c0|r0|t2": {
+        "ASK_PROPERTY_TYPE": 4,
+        "CLARIFY_REPEAT": 13,
+        "ASK_TIMELINE": 7,
+        "HANDLE_OBJECTION": 34,
+        "ASK_BUDGET": 20,
+        "ASK_LOCATION": 13,
+        "PROVIDE_INFO": 6,
+        "GREET": 1
+      },
+      "s3|o0|b1|e0|h0|c0|r0|t3": {
+        "ASK_PROPERTY_TYPE": 1,
+        "ASK_BUDGET": 1
+      },
+      "s3|o0|b1|e0|h0|c0|r1|t4": {
+        "ASK_TIMELINE": 1,
+        "GREET": 1
+      },
+      "s1|o0|b0|e1|h0|c0|r1|t3": {
+        "ASK_BUDGET": 14,
+        "HANDLE_OBJECTION": 6,
+        "ASK_PROPERTY_TYPE": 22,
+        "ASK_TIMELINE": 1,
+        "ASK_LOCATION": 1
+      },
+      "s2|o0|b0|e1|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 150,
+        "ASK_TIMELINE": 6,
+        "CLARIFY_REPEAT": 14,
+        "ASK_BUDGET": 9,
+        "ASK_PROPERTY_TYPE": 6,
+        "GREET": 2,
+        "ASK_LOCATION": 11,
+        "PROVIDE_INFO": 3,
+        "HANDLE_OBJECTION": 7,
+        "ACK_BUSY_DEFER": 6
+      },
+      "s0|o0|b0|e0|h0|c0|r0|t3": {
+        "ACK_BUSY_DEFER": 9,
+        "ASK_TIMELINE": 1,
+        "ASK_BUDGET": 2,
+        "ASK_LOCATION": 1,
+        "HANDLE_OBJECTION": 2,
+        "ASK_PROPERTY_TYPE": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s0|o0|b0|e0|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 9
+      },
+      "s3|o1|b0|e0|h0|c0|r0|t3": {
+        "PROVIDE_INFO": 4,
+        "HANDLE_OBJECTION": 29,
+        "ASK_LOCATION": 1,
+        "CLARIFY_REPEAT": 8
+      },
+      "s3|o1|b0|e0|h0|c0|r0|t4": {
+        "CLARIFY_REPEAT": 10,
+        "PROVIDE_INFO": 12,
+        "ASK_BUDGET": 3,
+        "ASK_LOCATION": 3,
+        "HANDLE_OBJECTION": 23,
+        "GRACEFUL_EXIT": 1,
+        "GREET": 1,
+        "ASK_PROPERTY_TYPE": 2,
+        "ASK_TIMELINE": 1
+      },
+      "s3|o1|b0|e0|h0|c1|r0|t5": {
+        "ACK_BUSY_DEFER": 1,
+        "CLARIFY_REPEAT": 1,
+        "GRACEFUL_EXIT": 3
+      },
+      "s0|o0|b0|e0|h0|c0|r0|t1": {
+        "CLARIFY_REPEAT": 25,
+        "HANDLE_OBJECTION": 26,
+        "ASK_PROPERTY_TYPE": 66,
+        "ASK_LOCATION": 18,
+        "ASK_BUDGET": 53,
+        "ASK_TIMELINE": 14,
+        "GREET": 2,
+        "PROVIDE_INFO": 1
+      },
+      "s0|o1|b0|e0|h0|c0|r0|t2": {
+        "PROVIDE_INFO": 1
+      },
+      "s1|o0|b0|e0|h0|c0|r0|t3": {
+        "PROVIDE_INFO": 7,
+        "ASK_TIMELINE": 7,
+        "CLARIFY_REPEAT": 4,
+        "ASK_PROPERTY_TYPE": 11,
+        "ACK_BUSY_DEFER": 7,
+        "HANDLE_OBJECTION": 17,
+        "ASK_BUDGET": 10,
+        "ASK_LOCATION": 4
+      },
+      "s1|o0|b0|e0|h0|c0|r1|t4": {
+        "CLARIFY_REPEAT": 3,
+        "ASK_LOCATION": 1,
+        "ASK_PROPERTY_TYPE": 6,
+        "GRACEFUL_EXIT": 3,
+        "ASK_BUDGET": 3,
+        "HANDLE_OBJECTION": 4,
+        "PROVIDE_INFO": 1
+      },
+      "s1|o0|b0|e0|h0|c0|r0|t5": {
+        "CLARIFY_REPEAT": 3,
+        "GRACEFUL_EXIT": 21,
+        "PROVIDE_INFO": 2,
+        "HANDLE_OBJECTION": 2,
+        "ASK_PROPERTY_TYPE": 2
+      },
+      "s1|o0|b0|e0|h0|c0|r1|t5": {
+        "GRACEFUL_EXIT": 10,
+        "ASK_PROPERTY_TYPE": 2,
+        "PROVIDE_INFO": 2
+      },
+      "s1|o0|b0|e1|h0|c0|r0|t0": {
+        "ASK_LOCATION": 1,
+        "HANDLE_OBJECTION": 7,
+        "ASK_TIMELINE": 2,
+        "ASK_PROPERTY_TYPE": 1,
+        "ASK_BUDGET": 3,
+        "CLARIFY_REPEAT": 2,
+        "PROVIDE_INFO": 1
+      },
+      "s2|o0|b0|e1|h0|c1|r0|t1": {
+        "ASK_BUDGET": 1,
+        "ASK_TIMELINE": 1,
+        "ASK_LOCATION": 1
+      },
+      "s0|o0|b0|e0|h0|c1|r0|t1": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s2|o1|b0|e0|h0|c0|r0|t2": {
+        "HANDLE_OBJECTION": 33,
+        "ASK_PROPERTY_TYPE": 15,
+        "CLARIFY_REPEAT": 12,
+        "PROVIDE_INFO": 8,
+        "ASK_BUDGET": 4,
+        "GREET": 1
+      },
+      "s3|o0|b0|e0|h0|c0|r0|t4": {
+        "ASK_LOCATION": 8,
+        "HANDLE_OBJECTION": 25,
+        "ASK_TIMELINE": 10,
+        "CLARIFY_REPEAT": 21,
+        "GREET": 2,
+        "PROVIDE_INFO": 10,
+        "ASK_PROPERTY_TYPE": 7,
+        "ASK_BUDGET": 3,
+        "ACK_BUSY_DEFER": 2,
+        "GRACEFUL_EXIT": 1
+      },
+      "s2|o0|b0|e0|h0|c1|r0|t3": {
+        "ASK_PROPERTY_TYPE": 5,
+        "GREET": 1,
+        "HANDLE_OBJECTION": 2,
+        "ASK_BUDGET": 4,
+        "PROVIDE_INFO": 1
+      },
+      "s2|o0|b0|e1|h0|c1|r1|t4": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s2|o0|b0|e0|h0|c1|r0|t5": {
+        "GRACEFUL_EXIT": 27,
+        "ASK_PROPERTY_TYPE": 3,
+        "ACK_BUSY_DEFER": 1,
+        "HANDLE_OBJECTION": 2
+      },
+      "s2|o1|b0|e0|h0|c0|r1|t4": {
+        "ASK_PROPERTY_TYPE": 3,
+        "GRACEFUL_EXIT": 6,
+        "ASK_TIMELINE": 1,
+        "ASK_BUDGET": 1
+      },
+      "s2|o0|b0|e0|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 115,
+        "PROVIDE_INFO": 3,
+        "HANDLE_OBJECTION": 8,
+        "CLARIFY_REPEAT": 6,
+        "ASK_PROPERTY_TYPE": 4,
+        "ACK_BUSY_DEFER": 6,
+        "ASK_TIMELINE": 2,
+        "ASK_LOCATION": 2,
+        "ASK_BUDGET": 9
+      },
+      "s3|o0|b0|e1|h0|c1|r0|t5": {
+        "CLARIFY_REPEAT": 7,
+        "GRACEFUL_EXIT": 12,
+        "ASK_LOCATION": 1,
+        "ACK_BUSY_DEFER": 1
+      },
+      "s1|o1|b0|e0|h0|c0|r0|t2": {
+        "ASK_PROPERTY_TYPE": 19,
+        "HANDLE_OBJECTION": 9,
+        "ASK_BUDGET": 11,
+        "CLARIFY_REPEAT": 4,
+        "PROVIDE_INFO": 4
+      },
+      "s1|o0|b0|e0|h0|c0|r1|t3": {
+        "ASK_BUDGET": 9,
+        "ASK_TIMELINE": 2,
+        "HANDLE_OBJECTION": 6,
+        "ASK_PROPERTY_TYPE": 13,
+        "CLARIFY_REPEAT": 2,
+        "ASK_LOCATION": 3,
+        "PROVIDE_INFO": 3
+      },
+      "s2|o0|b0|e1|h0|c1|r0|t3": {
+        "ASK_TIMELINE": 3,
+        "CLARIFY_REPEAT": 5,
+        "ASK_PROPERTY_TYPE": 9,
+        "ASK_BUDGET": 6,
+        "ASK_LOCATION": 2,
+        "GREET": 1,
+        "PROVIDE_INFO": 1
+      },
+      "s1|o0|b0|e0|h0|c1|r0|t3": {
+        "CLARIFY_REPEAT": 1,
+        "ASK_BUDGET": 3,
+        "ASK_PROPERTY_TYPE": 3
+      },
+      "s1|o0|b0|e0|h0|c0|r0|t4": {
+        "PROVIDE_INFO": 5,
+        "ASK_PROPERTY_TYPE": 24,
+        "ASK_BUDGET": 19,
+        "ACK_BUSY_DEFER": 3,
+        "HANDLE_OBJECTION": 11,
+        "ASK_LOCATION": 3,
+        "GRACEFUL_EXIT": 3,
+        "CLARIFY_REPEAT": 4,
+        "ASK_TIMELINE": 3
+      },
+      "s1|o0|b0|e0|h0|c0|r1|t2": {
+        "ASK_PROPERTY_TYPE": 4,
+        "HANDLE_OBJECTION": 10,
+        "GREET": 1
+      },
+      "s2|o0|b0|e0|h0|c0|r1|t3": {
+        "ASK_BUDGET": 4,
+        "HANDLE_OBJECTION": 5,
+        "CLARIFY_REPEAT": 4,
+        "PROVIDE_INFO": 6,
+        "ASK_TIMELINE": 2,
+        "ASK_LOCATION": 1
+      },
+      "s2|o1|b0|e0|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 26,
+        "HANDLE_OBJECTION": 6,
+        "ACK_BUSY_DEFER": 1,
+        "PROVIDE_INFO": 3,
+        "ASK_PROPERTY_TYPE": 2
+      },
+      "s1|o1|b0|e0|h0|c0|r0|t3": {
+        "CLARIFY_REPEAT": 4,
+        "ASK_PROPERTY_TYPE": 5,
+        "ASK_BUDGET": 1,
+        "PROVIDE_INFO": 2
+      },
+      "s1|o0|b0|e1|h0|c0|r0|t4": {
+        "PROVIDE_INFO": 1,
+        "ASK_PROPERTY_TYPE": 4,
+        "ASK_TIMELINE": 2,
+        "HANDLE_OBJECTION": 4,
+        "GRACEFUL_EXIT": 1,
+        "ACK_BUSY_DEFER": 2,
+        "ASK_LOCATION": 2,
+        "CLARIFY_REPEAT": 1,
+        "ASK_BUDGET": 1
+      },
+      "s2|o1|b0|e0|h0|c0|r0|t1": {
+        "CLARIFY_REPEAT": 6,
+        "PROVIDE_INFO": 10,
+        "HANDLE_OBJECTION": 16,
+        "GREET": 1,
+        "ASK_PROPERTY_TYPE": 2
+      },
+      "s2|o0|b0|e1|h0|c1|r0|t4": {
+        "PROVIDE_INFO": 2,
+        "ACK_BUSY_DEFER": 1,
+        "CLARIFY_REPEAT": 2,
+        "ASK_TIMELINE": 3,
+        "GRACEFUL_EXIT": 4,
+        "ASK_LOCATION": 1,
+        "HANDLE_OBJECTION": 3,
+        "ASK_BUDGET": 3,
+        "ASK_PROPERTY_TYPE": 5
+      },
+      "s1|o0|b0|e1|h0|c0|r0|t3": {
+        "ASK_PROPERTY_TYPE": 12,
+        "ASK_LOCATION": 2,
+        "ASK_BUDGET": 13,
+        "HANDLE_OBJECTION": 12,
+        "ASK_TIMELINE": 7,
+        "CLARIFY_REPEAT": 1,
+        "GREET": 2,
+        "PROVIDE_INFO": 2
+      },
+      "s2|o0|b0|e1|h0|c1|r0|t5": {
+        "GRACEFUL_EXIT": 30,
+        "ACK_BUSY_DEFER": 1,
+        "ASK_BUDGET": 1,
+        "CLARIFY_REPEAT": 3
+      },
+      "s3|o0|b0|e1|h0|c0|r1|t4": {
+        "CLARIFY_REPEAT": 6,
+        "ASK_PROPERTY_TYPE": 2,
+        "ASK_BUDGET": 6,
+        "ASK_LOCATION": 4,
+        "HANDLE_OBJECTION": 2
+      },
+      "s3|o0|b1|e0|h0|c0|r0|t4": {
+        "GRACEFUL_EXIT": 1,
+        "ASK_LOCATION": 3,
+        "ASK_TIMELINE": 2,
+        "ASK_BUDGET": 2,
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s3|o0|b0|e1|h0|c1|r0|t2": {
+        "ASK_LOCATION": 2,
+        "HANDLE_OBJECTION": 1
+      },
+      "s2|o0|b0|e0|h0|c1|r0|t1": {
+        "CLARIFY_REPEAT": 1,
+        "HANDLE_OBJECTION": 1
+      },
+      "s3|o0|b0|e1|h0|c1|r0|t3": {
+        "PROVIDE_INFO": 1,
+        "ASK_LOCATION": 3,
+        "CLARIFY_REPEAT": 1,
+        "HANDLE_OBJECTION": 1,
+        "ASK_TIMELINE": 1
+      },
+      "s3|o0|b0|e0|h0|c0|r0|t3": {
+        "PROVIDE_INFO": 4,
+        "ASK_BUDGET": 10,
+        "HANDLE_OBJECTION": 14,
+        "CLARIFY_REPEAT": 7,
+        "ASK_LOCATION": 7,
+        "ASK_TIMELINE": 16,
+        "ASK_PROPERTY_TYPE": 2,
+        "GREET": 1
+      },
+      "s1|o0|b0|e0|h0|c0|r0|t2": {
+        "CLARIFY_REPEAT": 12,
+        "HANDLE_OBJECTION": 21,
+        "ASK_TIMELINE": 8,
+        "ASK_BUDGET": 31,
+        "PROVIDE_INFO": 5,
+        "ASK_PROPERTY_TYPE": 33,
+        "ASK_LOCATION": 6,
+        "GREET": 1
+      },
+      "s1|o1|b0|e0|h0|c0|r1|t2": {
+        "ASK_BUDGET": 1,
+        "ASK_LOCATION": 1,
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s1|o0|b0|e1|h0|c1|r0|t2": {
+        "CLARIFY_REPEAT": 3,
+        "ASK_BUDGET": 9,
+        "ASK_TIMELINE": 1,
+        "ASK_PROPERTY_TYPE": 10,
+        "ASK_LOCATION": 1
+      },
+      "s1|o0|b1|e0|h0|c0|r0|t3": {
+        "PROVIDE_INFO": 1,
+        "CLARIFY_REPEAT": 1,
+        "ASK_BUDGET": 11,
+        "ASK_LOCATION": 5,
+        "ASK_PROPERTY_TYPE": 14,
+        "ASK_TIMELINE": 2
+      },
+      "s2|o0|b0|e0|h0|c1|r0|t4": {
+        "ASK_PROPERTY_TYPE": 6,
+        "ASK_BUDGET": 2,
+        "ASK_LOCATION": 1,
+        "HANDLE_OBJECTION": 1,
+        "GRACEFUL_EXIT": 7,
+        "PROVIDE_INFO": 1
+      },
+      "s2|o0|b0|e0|h0|c0|r0|t4": {
+        "CLARIFY_REPEAT": 15,
+        "HANDLE_OBJECTION": 17,
+        "PROVIDE_INFO": 15,
+        "GRACEFUL_EXIT": 19,
+        "ASK_PROPERTY_TYPE": 16,
+        "ASK_BUDGET": 28,
+        "ASK_TIMELINE": 12,
+        "ACK_BUSY_DEFER": 6,
+        "ASK_LOCATION": 9
+      },
+      "s2|o1|b0|e0|h0|c1|r0|t5": {
+        "GRACEFUL_EXIT": 4
+      },
+      "s0|o0|b0|e1|h0|c0|r0|t2": {
+        "ASK_TIMELINE": 8,
+        "ASK_PROPERTY_TYPE": 3,
+        "ASK_BUDGET": 4,
+        "ASK_LOCATION": 1,
+        "HANDLE_OBJECTION": 4,
+        "CLARIFY_REPEAT": 2,
+        "PROVIDE_INFO": 1
+      },
+      "s1|o0|b1|e0|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 4
+      },
+      "s1|o0|b0|e0|h0|c0|r0|t0": {
+        "GREET": 5,
+        "ASK_LOCATION": 1,
+        "HANDLE_OBJECTION": 6,
+        "CLARIFY_REPEAT": 4,
+        "ASK_BUDGET": 2,
+        "ASK_TIMELINE": 2
+      },
+      "s2|o0|b1|e0|h0|c0|r0|t5": {
+        "ACK_BUSY_DEFER": 3,
+        "GRACEFUL_EXIT": 24,
+        "ASK_LOCATION": 1,
+        "ASK_TIMELINE": 1,
+        "ASK_BUDGET": 2
+      },
+      "s0|o0|b1|e0|h0|c0|r0|t0": {
+        "GREET": 6,
+        "HANDLE_OBJECTION": 2,
+        "CLARIFY_REPEAT": 1
+      },
+      "s2|o0|b0|e0|h0|c0|r1|t4": {
+        "HANDLE_OBJECTION": 6,
+        "ASK_LOCATION": 3,
+        "GRACEFUL_EXIT": 3,
+        "ASK_PROPERTY_TYPE": 2,
+        "CLARIFY_REPEAT": 2,
+        "ASK_TIMELINE": 4,
+        "ACK_BUSY_DEFER": 2,
+        "ASK_BUDGET": 3,
+        "PROVIDE_INFO": 2
+      },
+      "s0|o0|b0|e0|h1|c0|r0|t1": {
+        "CLARIFY_REPEAT": 18,
+        "ASK_PROPERTY_TYPE": 17,
+        "ASK_BUDGET": 18,
+        "GREET": 19,
+        "ASK_TIMELINE": 3,
+        "HANDLE_OBJECTION": 1,
+        "PROVIDE_INFO": 1
+      },
+      "s2|o0|b0|e0|h1|c0|r0|t3": {
+        "ASK_TIMELINE": 1,
+        "ASK_LOCATION": 2,
+        "ASK_BUDGET": 1
+      },
+      "s3|o0|b0|e0|h1|c0|r0|t4": {
+        "ASK_TIMELINE": 3
+      },
+      "s3|o0|b0|e0|h1|c0|r1|t5": {
+        "GRACEFUL_EXIT": 2
+      },
+      "s1|o0|b1|e0|h0|c1|r0|t3": {
+        "ASK_BUDGET": 3,
+        "CLARIFY_REPEAT": 1,
+        "ASK_PROPERTY_TYPE": 5
+      },
+      "s1|o0|b1|e0|h0|c0|r0|t4": {
+        "ACK_BUSY_DEFER": 2,
+        "ASK_PROPERTY_TYPE": 2,
+        "ASK_BUDGET": 1
+      },
+      "s1|o0|b0|e1|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 21,
+        "HANDLE_OBJECTION": 1,
+        "ASK_BUDGET": 1
+      },
+      "s1|o0|b0|e0|h1|c0|r0|t3": {
+        "ASK_PROPERTY_TYPE": 18,
+        "ASK_BUDGET": 16,
+        "HANDLE_OBJECTION": 10,
+        "ASK_LOCATION": 2,
+        "CLARIFY_REPEAT": 1,
+        "ASK_TIMELINE": 1,
+        "GREET": 1
+      },
+      "s1|o0|b0|e0|h1|c0|r1|t4": {
+        "ASK_BUDGET": 3,
+        "ASK_PROPERTY_TYPE": 5,
+        "CLARIFY_REPEAT": 1
+      },
+      "s2|o0|b0|e0|h1|c0|r0|t5": {
+        "GRACEFUL_EXIT": 31
+      },
+      "s3|o0|b0|e1|h0|c0|r0|t1": {
+        "ASK_LOCATION": 2,
+        "ASK_BUDGET": 2,
+        "CLARIFY_REPEAT": 1,
+        "ASK_TIMELINE": 1
+      },
+      "s3|o0|b0|e0|h0|c0|r1|t5": {
+        "PROVIDE_INFO": 4,
+        "ASK_TIMELINE": 3,
+        "CLARIFY_REPEAT": 5,
+        "GRACEFUL_EXIT": 13,
+        "ASK_BUDGET": 2,
+        "HANDLE_OBJECTION": 2,
+        "ASK_PROPERTY_TYPE": 1,
+        "ACK_BUSY_DEFER": 1,
+        "ASK_LOCATION": 1
+      },
+      "s2|o0|b0|e0|h0|c0|r1|t5": {
+        "HANDLE_OBJECTION": 3,
+        "GRACEFUL_EXIT": 22,
+        "PROVIDE_INFO": 5,
+        "ASK_BUDGET": 2,
+        "ASK_LOCATION": 1,
+        "CLARIFY_REPEAT": 1,
+        "GREET": 1,
+        "ASK_PROPERTY_TYPE": 1,
+        "ACK_BUSY_DEFER": 2
+      },
+      "s4|o0|b0|e0|h0|c0|r0|t5": {
+        "HANDLE_OBJECTION": 4,
+        "ASK_PROPERTY_TYPE": 3,
+        "GRACEFUL_EXIT": 18,
+        "ASK_TIMELINE": 3,
+        "ASK_BUDGET": 1,
+        "CLARIFY_REPEAT": 1,
+        "PROVIDE_INFO": 1
+      },
+      "s1|o1|b0|e0|h0|c1|r0|t3": {
+        "ASK_BUDGET": 3,
+        "ASK_PROPERTY_TYPE": 3,
+        "HANDLE_OBJECTION": 1,
+        "PROVIDE_INFO": 1
+      },
+      "s1|o1|b0|e0|h0|c0|r0|t4": {
+        "ASK_PROPERTY_TYPE": 2,
+        "GRACEFUL_EXIT": 2,
+        "ACK_BUSY_DEFER": 1
+      },
+      "s2|o0|b0|e1|h0|c1|r0|t2": {
+        "ASK_LOCATION": 1,
+        "ASK_PROPERTY_TYPE": 2,
+        "HANDLE_OBJECTION": 1,
+        "ASK_TIMELINE": 1,
+        "ASK_BUDGET": 1
+      },
+      "s1|o0|b0|e0|h1|c1|r0|t4": {
+        "ASK_PROPERTY_TYPE": 3,
+        "ASK_BUDGET": 1
+      },
+      "s2|o0|b1|e0|h0|c0|r0|t4": {
+        "ASK_LOCATION": 5,
+        "ASK_TIMELINE": 4,
+        "ASK_BUDGET": 7,
+        "ASK_PROPERTY_TYPE": 9,
+        "GRACEFUL_EXIT": 1
+      },
+      "s1|o1|b0|e0|h0|c0|r0|t1": {
+        "CLARIFY_REPEAT": 11,
+        "HANDLE_OBJECTION": 19,
+        "ASK_PROPERTY_TYPE": 4,
+        "ASK_BUDGET": 1,
+        "PROVIDE_INFO": 2
+      },
+      "s0|o0|b0|e1|h0|c0|r1|t2": {
+        "ASK_BUDGET": 1,
+        "ASK_PROPERTY_TYPE": 1,
+        "HANDLE_OBJECTION": 4
+      },
+      "s3|o1|b0|e0|h0|c1|r0|t4": {
+        "HANDLE_OBJECTION": 2,
+        "PROVIDE_INFO": 1
+      },
+      "s2|o0|b1|e0|h0|c0|r0|t3": {
+        "ASK_BUDGET": 10,
+        "ASK_LOCATION": 7,
+        "ASK_TIMELINE": 4,
+        "CLARIFY_REPEAT": 1,
+        "ASK_PROPERTY_TYPE": 5,
+        "HANDLE_OBJECTION": 1
+      },
+      "s2|o0|b1|e0|h0|c1|r0|t5": {
+        "GRACEFUL_EXIT": 9
+      },
+      "s2|o0|b0|e0|h0|c1|r0|t2": {
+        "ASK_LOCATION": 2,
+        "ASK_BUDGET": 1,
+        "HANDLE_OBJECTION": 1,
+        "ASK_PROPERTY_TYPE": 2
+      },
+      "s2|o0|b1|e0|h0|c1|r0|t4": {
+        "ASK_BUDGET": 4,
+        "ASK_PROPERTY_TYPE": 2
+      },
+      "s2|o0|b0|e0|h1|c0|r0|t4": {
+        "ASK_PROPERTY_TYPE": 11,
+        "HANDLE_OBJECTION": 6,
+        "ASK_BUDGET": 6,
+        "ASK_LOCATION": 2,
+        "CLARIFY_REPEAT": 1,
+        "ASK_TIMELINE": 1
+      },
+      "s2|o0|b0|e0|h1|c0|r1|t5": {
+        "GRACEFUL_EXIT": 8
+      },
+      "s3|o0|b0|e0|h0|c0|r0|t1": {
+        "ASK_LOCATION": 2,
+        "ASK_BUDGET": 3,
+        "CLARIFY_REPEAT": 1
+      },
+      "s3|o0|b0|e0|h0|c0|r0|t2": {
+        "ASK_LOCATION": 2,
+        "ASK_TIMELINE": 1,
+        "CLARIFY_REPEAT": 3,
+        "HANDLE_OBJECTION": 7,
+        "PROVIDE_INFO": 4,
+        "GREET": 1,
+        "ASK_BUDGET": 1
+      },
+      "s3|o0|b0|e1|h0|c0|r1|t3": {
+        "ASK_BUDGET": 4,
+        "ASK_LOCATION": 6,
+        "ASK_TIMELINE": 3,
+        "CLARIFY_REPEAT": 2
+      },
+      "s0|o0|b0|e0|h1|c0|r0|t3": {
+        "GRACEFUL_EXIT": 17,
+        "HANDLE_OBJECTION": 8,
+        "ASK_LOCATION": 5,
+        "ASK_TIMELINE": 3,
+        "ASK_PROPERTY_TYPE": 1,
+        "ASK_BUDGET": 1
+      },
+      "s0|o0|b0|e0|h1|c0|r0|t5": {
+        "GRACEFUL_EXIT": 9
+      },
+      "s4|o0|b0|e1|h0|c1|r0|t5": {
+        "CLARIFY_REPEAT": 3,
+        "GRACEFUL_EXIT": 2
+      },
+      "s2|o0|b0|e1|h0|c0|r1|t5": {
+        "GRACEFUL_EXIT": 9,
+        "HANDLE_OBJECTION": 1,
+        "ASK_BUDGET": 2,
+        "ACK_BUSY_DEFER": 1,
+        "ASK_TIMELINE": 1,
+        "ASK_LOCATION": 1
+      },
+      "s2|o1|b0|e0|h0|c1|r0|t2": {
+        "ASK_BUDGET": 3,
+        "ASK_PROPERTY_TYPE": 1,
+        "HANDLE_OBJECTION": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s0|o0|b0|e0|h0|c1|r0|t4": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s4|o0|b0|e0|h0|c0|r0|t3": {
+        "HANDLE_OBJECTION": 4,
+        "ASK_PROPERTY_TYPE": 1,
+        "PROVIDE_INFO": 2,
+        "ASK_LOCATION": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s1|o0|b0|e1|h0|c1|r0|t3": {
+        "ASK_BUDGET": 9,
+        "ASK_PROPERTY_TYPE": 3,
+        "ASK_LOCATION": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s2|o1|b0|e0|h0|c0|r1|t3": {
+        "HANDLE_OBJECTION": 1,
+        "ASK_PROPERTY_TYPE": 8,
+        "ASK_BUDGET": 4
+      },
+      "s3|o0|b0|e0|h0|c1|r0|t2": {
+        "PROVIDE_INFO": 1,
+        "ASK_BUDGET": 1
+      },
+      "s3|o0|b0|e0|h0|c1|r0|t3": {
+        "PROVIDE_INFO": 1,
+        "ASK_PROPERTY_TYPE": 1,
+        "HANDLE_OBJECTION": 1,
+        "ASK_TIMELINE": 1
+      },
+      "s4|o0|b0|e0|h0|c0|r0|t4": {
+        "ASK_LOCATION": 2,
+        "HANDLE_OBJECTION": 6,
+        "CLARIFY_REPEAT": 2,
+        "PROVIDE_INFO": 4,
+        "ASK_TIMELINE": 1,
+        "ASK_BUDGET": 1
+      },
+      "s2|o1|b0|e0|h0|c0|r1|t5": {
+        "HANDLE_OBJECTION": 1,
+        "GRACEFUL_EXIT": 5,
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s1|o1|b0|e0|h0|c1|r0|t2": {
+        "GREET": 1,
+        "ASK_BUDGET": 4,
+        "ASK_PROPERTY_TYPE": 6,
+        "HANDLE_OBJECTION": 1
+      },
+      "s2|o0|b0|e0|h0|c0|r1|t2": {
+        "ASK_PROPERTY_TYPE": 2,
+        "CLARIFY_REPEAT": 1,
+        "ASK_BUDGET": 1,
+        "ASK_TIMELINE": 1
+      },
+      "s2|o0|b1|e0|h0|c0|r1|t5": {
+        "GRACEFUL_EXIT": 7,
+        "ASK_LOCATION": 1
+      },
+      "s4|o1|b0|e0|h0|c0|r0|t3": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s2|o0|b0|e0|h1|c1|r0|t5": {
+        "GRACEFUL_EXIT": 8
+      },
+      "s2|o1|b0|e0|h0|c1|r0|t4": {
+        "GRACEFUL_EXIT": 3,
+        "ASK_PROPERTY_TYPE": 2,
+        "ASK_BUDGET": 2,
+        "ACK_BUSY_DEFER": 1
+      },
+      "s1|o0|b0|e1|h0|c0|r1|t4": {
+        "GREET": 1,
+        "CLARIFY_REPEAT": 1,
+        "ASK_LOCATION": 2,
+        "ASK_BUDGET": 3,
+        "HANDLE_OBJECTION": 1,
+        "ASK_PROPERTY_TYPE": 1,
+        "ACK_BUSY_DEFER": 1
+      },
+      "s0|o0|b0|e1|h0|c1|r0|t1": {
+        "ASK_LOCATION": 1,
+        "HANDLE_OBJECTION": 1,
+        "ASK_BUDGET": 1
+      },
+      "s3|o0|b0|e0|h0|c1|r0|t4": {
+        "ASK_BUDGET": 1,
+        "ASK_LOCATION": 3,
+        "PROVIDE_INFO": 1,
+        "ASK_TIMELINE": 1,
+        "CLARIFY_REPEAT": 1,
+        "GRACEFUL_EXIT": 1
+      },
+      "s1|o1|b0|e0|h0|c0|r1|t3": {
+        "ASK_PROPERTY_TYPE": 6,
+        "ASK_BUDGET": 4,
+        "ASK_TIMELINE": 2
+      },
+      "s1|o0|b0|e1|h0|c1|r0|t1": {
+        "ASK_PROPERTY_TYPE": 4,
+        "HANDLE_OBJECTION": 1,
+        "ASK_BUDGET": 4,
+        "GREET": 1,
+        "ASK_LOCATION": 1
+      },
+      "s1|o0|b0|e0|h1|c0|r0|t5": {
+        "GRACEFUL_EXIT": 19
+      },
+      "s1|o0|b1|e0|h0|c1|r0|t4": {
+        "ASK_BUDGET": 3,
+        "ASK_PROPERTY_TYPE": 3
+      },
+      "s1|o0|b1|e0|h0|c1|r1|t5": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s1|o0|b0|e0|h1|c0|r0|t4": {
+        "ASK_LOCATION": 2,
+        "ASK_PROPERTY_TYPE": 3,
+        "ASK_TIMELINE": 4,
+        "HANDLE_OBJECTION": 5,
+        "ASK_BUDGET": 4,
+        "ACK_BUSY_DEFER": 2,
+        "CLARIFY_REPEAT": 1,
+        "GRACEFUL_EXIT": 2
+      },
+      "s4|o1|b0|e0|h0|c0|r0|t5": {
+        "HANDLE_OBJECTION": 9,
+        "ACK_BUSY_DEFER": 1,
+        "GRACEFUL_EXIT": 4,
+        "PROVIDE_INFO": 2,
+        "ASK_LOCATION": 1
+      },
+      "s3|o0|b0|e0|h0|c0|r1|t4": {
+        "ASK_PROPERTY_TYPE": 1,
+        "PROVIDE_INFO": 1,
+        "ASK_BUDGET": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s1|o0|b0|e1|h0|c1|r0|t4": {
+        "ASK_PROPERTY_TYPE": 1,
+        "ASK_BUDGET": 2,
+        "HANDLE_OBJECTION": 1,
+        "GRACEFUL_EXIT": 1,
+        "ASK_TIMELINE": 1
+      },
+      "s3|o0|b1|e0|h0|c0|r1|t5": {
+        "GRACEFUL_EXIT": 3,
+        "ASK_BUDGET": 1
+      },
+      "s0|o0|b0|e0|h1|c1|r0|t3": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s2|o1|b0|e0|h0|c1|r0|t3": {
+        "ASK_PROPERTY_TYPE": 3,
+        "ASK_BUDGET": 4,
+        "CLARIFY_REPEAT": 2,
+        "ASK_LOCATION": 1,
+        "ASK_TIMELINE": 1
+      },
+      "s2|o1|b0|e0|h0|c0|r0|t0": {
+        "HANDLE_OBJECTION": 2
+      },
+      "s1|o0|b0|e0|h0|c1|r0|t4": {
+        "GRACEFUL_EXIT": 2,
+        "ASK_PROPERTY_TYPE": 3,
+        "ASK_BUDGET": 2,
+        "CLARIFY_REPEAT": 1
+      },
+      "s1|o0|b0|e1|h0|c1|r0|t5": {
+        "GRACEFUL_EXIT": 5
+      },
+      "s1|o0|b1|e0|h0|c0|r1|t5": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s2|o1|b0|e0|h0|c1|r0|t1": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s1|o0|b0|e0|h1|c1|r0|t3": {
+        "ASK_BUDGET": 1,
+        "ASK_PROPERTY_TYPE": 1,
+        "HANDLE_OBJECTION": 1
+      },
+      "s0|o0|b0|e0|h1|c0|r0|t4": {
+        "HANDLE_OBJECTION": 6,
+        "GRACEFUL_EXIT": 1
+      },
+      "s0|o0|b0|e0|h1|c0|r1|t5": {
+        "GRACEFUL_EXIT": 2
+      },
+      "s3|o0|b0|e1|h0|c0|r1|t5": {
+        "CLARIFY_REPEAT": 3,
+        "GRACEFUL_EXIT": 5,
+        "ASK_TIMELINE": 1,
+        "ASK_BUDGET": 4
+      },
+      "s3|o0|b0|e0|h0|c0|r1|t3": {
+        "PROVIDE_INFO": 3,
+        "CLARIFY_REPEAT": 2,
+        "ASK_BUDGET": 1,
+        "ASK_TIMELINE": 1
+      },
+      "s3|o0|b0|e0|h1|c0|r0|t5": {
+        "GRACEFUL_EXIT": 6
+      },
+      "s3|o0|b1|e0|h0|c1|r0|t5": {
+        "GRACEFUL_EXIT": 3
+      },
+      "s2|o0|b1|e0|h0|c0|r1|t4": {
+        "ASK_BUDGET": 4,
+        "CLARIFY_REPEAT": 1,
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s1|o1|b0|e0|h0|c1|r0|t1": {
+        "ASK_PROPERTY_TYPE": 3,
+        "HANDLE_OBJECTION": 1
+      },
+      "s3|o1|b0|e0|h0|c0|r0|t1": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s3|o0|b0|e1|h0|c0|r1|t2": {
+        "ASK_BUDGET": 2,
+        "HANDLE_OBJECTION": 1,
+        "ASK_LOCATION": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s1|o0|b0|e0|h0|c1|r0|t5": {
+        "HANDLE_OBJECTION": 1,
+        "GRACEFUL_EXIT": 2
+      },
+      "s1|o0|b0|e0|h1|c0|r1|t5": {
+        "GRACEFUL_EXIT": 6
+      },
+      "s3|o0|b0|e0|h0|c1|r0|t5": {
+        "GRACEFUL_EXIT": 6,
+        "CLARIFY_REPEAT": 2,
+        "ASK_BUDGET": 1
+      },
+      "s2|o0|b0|e1|h0|c0|r1|t2": {
+        "HANDLE_OBJECTION": 3,
+        "ASK_TIMELINE": 2,
+        "ASK_LOCATION": 2,
+        "ASK_BUDGET": 4,
+        "ASK_PROPERTY_TYPE": 5
+      },
+      "s1|o0|b1|e0|h0|c0|r0|t2": {
+        "ASK_TIMELINE": 1,
+        "ASK_PROPERTY_TYPE": 3,
+        "ASK_BUDGET": 3
+      },
+      "s4|o1|b0|e0|h0|c1|r0|t5": {
+        "PROVIDE_INFO": 1
+      },
+      "s2|o0|b0|e1|h0|c0|r1|t1": {
+        "ASK_LOCATION": 2,
+        "ASK_TIMELINE": 2
+      },
+      "s4|o0|b0|e1|h0|c0|r1|t3": {
+        "ASK_BUDGET": 1
+      },
+      "s2|o0|b1|e0|h0|c0|r0|t2": {
+        "CLARIFY_REPEAT": 2
+      },
+      "s1|o0|b1|e0|h0|c1|r0|t2": {
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s1|o0|b0|e1|h0|c0|r1|t1": {
+        "ASK_PROPERTY_TYPE": 4,
+        "ASK_TIMELINE": 1
+      },
+      "s1|o0|b0|e0|h0|c1|r0|t2": {
+        "ASK_PROPERTY_TYPE": 2,
+        "ASK_BUDGET": 6,
+        "CLARIFY_REPEAT": 1,
+        "ASK_LOCATION": 2
+      },
+      "s1|o0|b0|e0|h1|c1|r0|t5": {
+        "GRACEFUL_EXIT": 3
+      },
+      "s1|o0|b0|e1|h0|c0|r1|t5": {
+        "GRACEFUL_EXIT": 3,
+        "HANDLE_OBJECTION": 1,
+        "ACK_BUSY_DEFER": 1,
+        "ASK_BUDGET": 1
+      },
+      "s1|o0|b1|e0|h0|c0|r1|t4": {
+        "ASK_BUDGET": 3,
+        "GRACEFUL_EXIT": 1,
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s2|o0|b0|e1|h0|c0|r0|t0": {
+        "ASK_LOCATION": 2
+      },
+      "s0|o1|b0|e0|h0|c0|r0|t1": {
+        "PROVIDE_INFO": 2,
+        "HANDLE_OBJECTION": 1
+      },
+      "s1|o1|b0|e0|h0|c1|r0|t4": {
+        "ASK_BUDGET": 1,
+        "GRACEFUL_EXIT": 1,
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s0|o0|b0|e0|h1|c0|r0|t2": {
+        "HANDLE_OBJECTION": 1,
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s0|o0|b0|e1|h0|c0|r1|t1": {
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s0|o0|b0|e1|h0|c0|r0|t3": {
+        "ACK_BUSY_DEFER": 4
+      },
+      "s0|o0|b0|e0|h0|c0|r1|t2": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s0|o0|b0|e0|h0|c0|r1|t3": {
+        "HANDLE_OBJECTION": 2,
+        "PROVIDE_INFO": 1
+      },
+      "s0|o0|b0|e0|h0|c0|r1|t4": {
+        "HANDLE_OBJECTION": 1,
+        "ASK_TIMELINE": 1,
+        "ASK_LOCATION": 1,
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s2|o0|b0|e0|h1|c1|r0|t4": {
+        "ASK_PROPERTY_TYPE": 2,
+        "ASK_LOCATION": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s3|o1|b0|e0|h0|c0|r1|t5": {
+        "ASK_LOCATION": 1,
+        "HANDLE_OBJECTION": 1
+      },
+      "s0|o0|b0|e0|h0|c1|r0|t5": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s1|o0|b1|e0|h0|c0|r1|t3": {
+        "ASK_PROPERTY_TYPE": 3
+      },
+      "s1|o0|b0|e0|h1|c1|r1|t5": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s3|o1|b0|e0|h0|c0|r1|t4": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s1|o1|b0|e0|h0|c0|r0|t5": {
+        "GRACEFUL_EXIT": 1,
+        "PROVIDE_INFO": 1
+      },
+      "s1|o0|b0|e1|h0|c1|r1|t4": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s2|o1|b0|e0|h0|c0|r1|t2": {
+        "HANDLE_OBJECTION": 1,
+        "GREET": 1
+      },
+      "s0|o0|b1|e0|h0|c0|r0|t2": {
+        "ASK_TIMELINE": 1
+      },
+      "s0|o1|b0|e0|h0|c0|r0|t3": {
+        "CLARIFY_REPEAT": 1
+      },
+      "s1|o0|b1|e0|h0|c1|r0|t5": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s1|o1|b0|e0|h0|c0|r0|t0": {
+        "HANDLE_OBJECTION": 1,
+        "CLARIFY_REPEAT": 1
+      },
+      "s0|o0|b0|e1|h0|c0|r1|t3": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s3|o1|b0|e0|h0|c1|r0|t3": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s3|o1|b0|e0|h0|c0|r1|t3": {
+        "CLARIFY_REPEAT": 1
+      },
+      "s2|o0|b0|e0|h0|c0|r1|t1": {
+        "HANDLE_OBJECTION": 1,
+        "ASK_PROPERTY_TYPE": 1
+      },
+      "s4|o0|b0|e1|h0|c0|r1|t5": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s1|o1|b0|e0|h0|c0|r1|t5": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s4|o1|b0|e0|h0|c1|r0|t3": {
+        "HANDLE_OBJECTION": 1
+      },
+      "s4|o0|b0|e0|h0|c0|r0|t2": {
+        "CLARIFY_REPEAT": 2
+      },
+      "s4|o0|b0|e0|h0|c1|r0|t3": {
+        "PROVIDE_INFO": 1
+      },
+      "s4|o0|b0|e0|h0|c0|r1|t4": {
+        "CLARIFY_REPEAT": 1
+      },
+      "s4|o0|b0|e0|h0|c0|r1|t5": {
+        "CLARIFY_REPEAT": 1,
+        "GRACEFUL_EXIT": 2
+      },
+      "s1|o0|b0|e0|h0|c1|r1|t4": {
+        "ASK_BUDGET": 1
+      },
+      "s1|o0|b0|e0|h0|c0|r1|t1": {
+        "PROVIDE_INFO": 1
+      },
+      "s1|o1|b0|e0|h0|c0|r1|t4": {
+        "GRACEFUL_EXIT": 1
+      },
+      "s1|o0|b0|e1|h0|c1|r1|t5": {
+        "PROVIDE_INFO": 1
+      },
+      "s0|o1|b0|e0|h0|c0|r0|t4": {
+        "ACK_BUSY_DEFER": 1
+      }
+    }
+  },
+  "freeze_rules": null,
+  "metadata": {
+    "baseline_val_return": -0.6596666666666667
+  }
+}

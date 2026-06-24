@@ -1,0 +1,38 @@
+{
+  "active_policy_version": "learned_v1",
+  "active_policy_file": "policy_active.json",
+  "training": {
+    "baseline_val_return": -0.6596666666666667,
+    "learned_val_return": -0.39438644212295787,
+    "improvement": 0.26528022454370886,
+    "data_split": {
+      "train": 1050,
+      "val": 150,
+      "test": 300
+    }
+  },
+  "offline_evaluation": {
+    "primary_estimator": "DoublyRobust",
+    "baseline_test_return": -0.6216666666666667,
+    "dr_estimate": -0.007722514828964879,
+    "dr_ci_95": [
+      -0.5975945082734246,
+      0.6112780775599689
+    ],
+    "improvement_vs_baseline": 0.6139441518377018,
+    "significant_improvement": true,
+    "n_test_episodes": 300
+  },
+  "comparison_table": [
+    {
+      "metric": "Validation replay return",
+      "baseline": -0.6596666666666667,
+      "learned": -0.39438644212295787
+    },
+    {
+      "metric": "Test DR estimate",
+      "baseline": -0.6216666666666667,
+      "learned": -0.007722514828964879
+    }
+  ]
+}
